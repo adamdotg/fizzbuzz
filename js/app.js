@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	$('button').click(function() {
-		var collect = prompt('Please enter a number.');
+		var collect = $('#fbNum').val();
+		/*var collect = prompt('Please enter a number.');*/
 		if(isNaN(collect)){
 			alert('This is not a number');
 		}	else if (collect % 1 !=0) {
